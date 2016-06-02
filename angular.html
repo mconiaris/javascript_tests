@@ -24,16 +24,15 @@
 </head>
 <body ng-app>
   <p>Search Departments: <input type="text" placeholder="Enter search string" ng-model="searchString"></p>
-
-
- <div ng-init = departments = [
-  { name: 'Sales', contact: 'Marsha Brown'},
-  { name: 'Support', contact: 'Dave Price'},
-  { name: 'Production', contact: 'Grant Wales'},
-  { name: 'Service', contact: 'Sherry Dell'},
-  { name: 'Administration', contact: 'Sally Bennett'},
-  { name: 'Accounting', contact: 'Kim Sutherland'},
-  { name: 'Shipping', contact: 'Sandy Connell'} ] >
+   <div ng-init = departments = [
+      { name: 'Sales', contact: 'Marsha Brown'},
+      { name: 'Support', contact: 'Dave Price'},
+      { name: 'Production', contact: 'Grant Wales'},
+      { name: 'Service', contact: 'Sherry Dell'},
+      { name: 'Administration', contact: 'Sally Bennett'},
+      { name: 'Accounting', contact: 'Kim Sutherland'},
+      { name: 'Shipping', contact: 'Sandy Connell'} ] >
+    </div>
   <div id="list-container">
     <ul>
       <li ng-repeat="dept in departments"> {{ dept.name }}</li>
